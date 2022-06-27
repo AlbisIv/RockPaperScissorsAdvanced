@@ -1,0 +1,84 @@
+.game-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+.card {
+  background-color: #e9c46a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 1);
+  }
+}
+.title {
+  margin: 40px 0 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.selected {
+  background-color: #2a9d8f;
+  transform: scale(1.1);
+}
+
+body {
+  background-color: #264653;
+  color: rgb(196, 196, 196);
+}
+
+.btn {
+  background-color: #2a9d8f;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+@keyframes win {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.win {
+  background-color: #2a9d50;
+  // animation-name: win;
+  // animation-duration: 0.7s;
+}
+.draw {
+  background-color: #d6e96a;
+}
+.loss {
+  background-color: #e75651;
+}
